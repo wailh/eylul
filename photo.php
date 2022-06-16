@@ -1,3 +1,11 @@
+<!-- <?php
+    session_start();
+    if(!isset($_SESSION['nom'])) {
+        header('location: connecter.php');
+    }
+?> -->
+
+
 <!DOCTYPE html>
 <head>
     <title>Mon Profile</title>

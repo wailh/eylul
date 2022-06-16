@@ -1,5 +1,9 @@
-
-
+<!-- <?php
+    session_start();
+    if(!isset($_SESSION['prenom'])) {
+        header('location: connecter.php');
+    }
+?> -->
 
 <!DOCTYPE html>
 <head>
@@ -38,12 +42,12 @@
                 <li><a href="publier.php"><i class="fas fa-plus" style="font-size:30px"></i> Publier </a></li>
                 <li><a href="ami.php"> <i class="fa-solid fa-user-group" style="font-size:29px"> </i>  Amis </a></li>
                 <li><a href="#"><i class="fa fa-cog"></i>  Paramètres </a></li>
-                <li><a href="connecter.php"><i class="fa-solid fa-right-from-bracket" style="font-size:30px"></i> Déconnecter </a></li>
+                <li><a href="deconnecter.php"><i class="fa-solid fa-right-from-bracket" style="font-size:30px"></i> Déconnecter </a></li>
             </ul>
         </div>
         <div class="ff">
            
-           <p><h2>Bonjour Utilisateur</h2></p> 
+           <p><h2>Bonjour <?php echo $_SESSION['prenom']; ?></h2></p> 
         </div>
         
     </div> 

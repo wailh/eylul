@@ -1,11 +1,10 @@
-<?php
-include 'base.php';
+<!-- <?php
+    session_start();
+    if(!isset($_SESSION['nom'])) {
+        header('location: connecter.php');
+    }
+?> -->
 
-error_reporting(0);
-
-session_start();
-
-?>
 
 <!DOCTYPE html>
 <head>
